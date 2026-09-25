@@ -1,0 +1,16 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "node",
+    "APPROVAL_SIGNING_SECRET": "dev-secret-do-not-use-in-production",
+    "GOOGLE_MAPS_API_KEY": "",
+    "UBER_CLIENT_ID": "",
+    "UBER_CLIENT_SECRET": "",
+    "DOORDASH_DEVELOPER_ID": "",
+    "DOORDASH_KEY_ID": "",
+    "DOORDASH_SIGNING_SECRET": "",
+    "GRUBHUB_CLIENT_ID": "",
+    "GRUBHUB_CLIENT_SECRET": ""
+  }
+}

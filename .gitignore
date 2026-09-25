@@ -1,0 +1,25 @@
+node_modules
+backend/node_modules
+.expo
+expo-cache
+build
+dist
+out
+.env
+.env.local
+.env.*.local
+! .env.example
+*.local.settings.json
+! backend/local.settings.example.json
+.vscode
+.idea
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+*.log
+npm-debug.log*
+coverage
+tmp
+temp

@@ -1,0 +1,41 @@
+{
+  "name": "AMX Agent Command",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "features": {
+    "ghcr.io/devcontainers/features/azure-functions-core-tools:1": {
+      "version": "4",
+      "installExtensions": false
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "expo.vscode-expo-tools",
+        "msjsdiag.vscode-react-native"
+      ],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "zsh",
+        "files.watcherExclude": {
+          "**/node_modules/**": true,
+          "**/expo/**": true
+        }
+      }
+    }
+  },
+  "forwardPorts": [8081, 4040],
+  "portsAttributes": {
+    "8081": {
+      "label": "Expo Dev Server",
+      "description": "Expo Metro bundler and dev server",
+      "onAutoForward": "notify"
+    },
+    "4040": {
+      "label": "Expo Dashboard",
+      "description": "Expo developer tools dashboard",
+      "onAutoForward": "notify"
+    }
+  },
+  "postCreateCommand": "bash .devcontainer/setup.sh",
+  "remoteUser": "node"
+}
